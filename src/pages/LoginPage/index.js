@@ -29,7 +29,7 @@ const LoginPage = ({ navigation }) => {
 						onChangeText={text => setPasswd(text)}
 						secureTextEntry
 						style={styles.TextInput}
-						placeholder={'Password'}
+						placeholder={'Senha'}
 					/>
 				</View>
 
@@ -44,14 +44,14 @@ const LoginPage = ({ navigation }) => {
 						screen:'AllMoviesPage'
 					}}
 				>
-					<Text style={styles.LinkText}>Browse Movies</Text>
+					<Text style={styles.LinkText}>Ver Filmes em Cartaz</Text>
 				</Link>
 				<Link
 					to={{
 						screen: 'CreateAccountPage'
 					}}
 				>
-					<Text style={styles.LinkText}>Create an account</Text>
+					<Text style={styles.LinkText}>Criar Conta</Text>
 				</Link>
 
 				<Link
@@ -59,7 +59,7 @@ const LoginPage = ({ navigation }) => {
 						screen: 'ForgotPasswordPage'
 					}}
 				>
-					<Text style={styles.LinkText}>Forgot your password?</Text>
+					<Text style={styles.LinkText}>Esqueceu sua senha?</Text>
 				</Link>
 
 			</View>

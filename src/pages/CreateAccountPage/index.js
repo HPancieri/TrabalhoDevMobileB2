@@ -30,7 +30,7 @@ const CreateAccountPage = ({ navigation }) => {
 						onChangeText={text => setPasswd(text)}
 						secureTextEntry
 						style={styles.TextInput}
-						placeholder={'Password'}
+						placeholder={'Senha'}
 					/>
 				</View>
 
@@ -40,12 +40,12 @@ const CreateAccountPage = ({ navigation }) => {
 						onChangeText={text => setRepPasswd(text)}
 						secureTextEntry
 						style={styles.TextInput}
-						placeholder={'Repeat Password'}
+						placeholder={'Confirme sua senha'}
 					/>
 				</View>
 
 				<TouchableOpacity style={styles.ConfirmBtn}>
-					<Text style={styles.ConfirmText}>Create Account</Text>
+					<Text style={styles.ConfirmText}>Criar Conta</Text>
 				</TouchableOpacity>
 			</View>
 
@@ -55,7 +55,7 @@ const CreateAccountPage = ({ navigation }) => {
 						screen: 'LoginPage'
 					}}
 				>
-					<Text style={styles.LinkText}>Back to Login</Text>
+					<Text style={styles.LinkText}>Voltar para Login</Text>
 				</Link>
 			</View>
 		</SafeAreaView>
