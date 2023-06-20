@@ -4,7 +4,6 @@ import CreateAccountPage from "../../pages/CreateAccountPage";
 import ForgotPasswordPage from "../../pages/ForgotPasswordPage";
 import AllMoviesPage from "../../pages/AllMoviesPage";
 import MovieDetailsPage from "../../pages/MovieDetailsPage";
-import MovieCard from "../../components/MovieCard";
 
 
 const Stack = createNativeStackNavigator();
