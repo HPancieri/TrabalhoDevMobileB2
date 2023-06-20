@@ -40,6 +40,7 @@ const LoginPage = ({ navigation }) => {
 
 			<View style={styles.LinksContainer}>
 				<Link
+					style={styles.Links}
 					to={{
 						screen:'AllMoviesPage'
 					}}
@@ -47,6 +48,7 @@ const LoginPage = ({ navigation }) => {
 					<Text style={styles.LinkText}>Ver Filmes em Cartaz</Text>
 				</Link>
 				<Link
+					style={styles.Links}
 					to={{
 						screen: 'CreateAccountPage'
 					}}
@@ -55,6 +57,7 @@ const LoginPage = ({ navigation }) => {
 				</Link>
 
 				<Link
+					style={styles.Links}
 					to={{
 						screen: 'ForgotPasswordPage'
 					}}

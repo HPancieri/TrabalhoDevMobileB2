@@ -27,7 +27,7 @@ const AllMoviesPage = ({ navigation }) => {
 						</ScrollView>
 
 						<TouchableOpacity onPress={() => {navigation.pop()}} style={styles.OptionsBtn}>
-							<Text>Voltar</Text>
+							<Text style={styles.OptionsText}>Voltar</Text>
 						</TouchableOpacity>
 					</View> :
 					<ActivityIndicator size={"large"} color={"#2e3440"}/>

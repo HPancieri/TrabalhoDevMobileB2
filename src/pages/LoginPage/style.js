@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
 	LinkText: {
 		color: '#2e3440',
 		fontWeight: 'bold',
-		margin: 5,
+		fontSize: 16,
 	},
 	Title: {
 		color: '#2e3440',
@@ -63,6 +63,9 @@ const styles = StyleSheet.create({
 		marginTop: 20,
 		alignItems: 'center',
 		width: '100%',
+	},
+	Links: {
+		margin: 5,
 	},
 });
 

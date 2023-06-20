@@ -10,7 +10,7 @@ const CreateAccountPage = ({ navigation }) => {
 
 	return (
 		<SafeAreaView style={styles.Container}>
-			<Text style={styles.Title}>Create Account</Text>
+			<Text style={styles.Title}>Criar Conta</Text>
 
 			<View style={styles.InputContainer}>
 				<View style={styles.InputInfo}>

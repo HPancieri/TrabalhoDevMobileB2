@@ -12,6 +12,11 @@ const styles = StyleSheet.create({
 	OptionsBtn: {
 		textAlign: "center",
 	},
+	OptionsText: {
+		fontWeight: "bold",
+		fontSize: 20,
+		color: '#2e3440',
+	},
 });
 
 export default styles;

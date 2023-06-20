@@ -8,7 +8,7 @@ const ForgotPasswordPage = ({ navigation }) => {
 
 	return (
 		<SafeAreaView style={styles.Container}>
-			<Text style={styles.Title}>Reset Password</Text>
+			<Text style={styles.Title}>Resetar Senha</Text>
 
 			<View style={styles.InputContainer}>
 				<View style={styles.InputInfo}>

@@ -37,6 +37,7 @@ const styles = StyleSheet.create({
 	LinkText: {
 		color: '#2e3440',
 		fontWeight: 'bold',
+		fontSize: 16,
 	},
 	Title: {
 		color: '#2e3440',
