@@ -39,20 +39,28 @@ const LoginPage = ({ navigation }) => {
 			</View>
 
 			<View style={styles.LinksContainer}>
-					<Link
-						to={{
-							screen: 'CreateAccountPage'
-						}}
-					>
-						<Text style={styles.LinkText}>Create an account</Text>
-					</Link>
-					<Link
-						to={{
-							screen: 'ForgotPasswordPage'
-						}}
-					>
-						<Text style={styles.LinkText}>Forgot your password?</Text>
-					</Link>
+				<Link
+					to={{
+						screen:'AllMoviesPage'
+					}}
+				>
+					<Text style={styles.LinkText}>Browse Movies</Text>
+				</Link>
+				<Link
+					to={{
+						screen: 'CreateAccountPage'
+					}}
+				>
+					<Text style={styles.LinkText}>Create an account</Text>
+				</Link>
+
+				<Link
+					to={{
+						screen: 'ForgotPasswordPage'
+					}}
+				>
+					<Text style={styles.LinkText}>Forgot your password?</Text>
+				</Link>
 
 			</View>
 		</SafeAreaView>
