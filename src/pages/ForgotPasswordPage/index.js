@@ -23,7 +23,7 @@ const ForgotPasswordPage = ({ navigation }) => {
 				</View>
 
 				<TouchableOpacity style={styles.ConfirmBtn}>
-					<Text>Reset Password</Text>
+					<Text style={styles.ConfirmText}>Reset Password</Text>
 				</TouchableOpacity>
 			</View>
 

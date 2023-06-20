@@ -1,29 +1,22 @@
-import { Dimensions, StyleSheet } from "react-native";
-
-const maxWidth = Dimensions.get("window").width * 0.9;
-const maxHeight = Dimensions.get("window").height * 0.8;
+import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
 	MovieContainer: {
-		width: maxWidth,
-		height: maxHeight,
+		flex: 1,
 		backgroundColor: "#3b4252",
 		justifyContent: "space-evenly",
 		alignItems: "center",
 		padding: 10,
-		margin: 15,
-		borderRadius: 10,
 	},
 	Image: {
 		width: "90%",
-		height: "60%",
+		height: "50%",
 		margin: 10,
 		borderRadius: 10,
 		resizeMode: "cover",
 	},
 	Description: {
 		color: "#d8dee9",
-		marginBottom: 10,
 	},
 	Title: {
 		fontWeight: "bold",
@@ -33,7 +26,6 @@ const styles = StyleSheet.create({
 	},
 	TextContainer: {
 		width: "90%",
-		alignItems: "center",
 		// justifyContent: "space-around",
 	},
 	BuyBtn: {
@@ -43,16 +35,6 @@ const styles = StyleSheet.create({
 		textAlign: "center",
 		padding: 10,
 		margin: 10,
-		width: "80%",
-	},
-	ReadMoreBtn: {
-		backgroundColor: "#d08770",
-		color: "#eceff4",
-		borderRadius: 10,
-		textAlign: "center",
-		padding: 10,
-		margin: 10,
-		width: "80%",
 	},
 	BuyText: {
 		fontSize: 18,
@@ -73,6 +55,14 @@ const styles = StyleSheet.create({
 		color: "#d8dee9",
 	},
 	TitleSubtitleContainer: {
+		margin: 10,
+	},
+	GoBackBtn: {
+		backgroundColor: "#d08770",
+		color: "#eceff4",
+		borderRadius: 10,
+		textAlign: "center",
+		padding: 10,
 		margin: 10,
 	},
 });

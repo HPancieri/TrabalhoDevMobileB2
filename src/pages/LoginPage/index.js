@@ -34,7 +34,7 @@ const LoginPage = ({ navigation }) => {
 				</View>
 
 				<TouchableOpacity style={styles.ConfirmBtn}>
-					<Text>Login</Text>
+					<Text style={styles.ConfirmText}>Login</Text>
 				</TouchableOpacity>
 			</View>
 

@@ -45,7 +45,7 @@ const CreateAccountPage = ({ navigation }) => {
 				</View>
 
 				<TouchableOpacity style={styles.ConfirmBtn}>
-					<Text>Create Account</Text>
+					<Text style={styles.ConfirmText}>Create Account</Text>
 				</TouchableOpacity>
 			</View>
 

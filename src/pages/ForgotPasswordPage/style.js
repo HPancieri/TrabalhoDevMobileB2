@@ -46,11 +46,17 @@ const styles = StyleSheet.create({
 	},
 	ConfirmBtn: {
 		borderRadius: 10,
-		backgroundColor: '#81a1c1',
-		width: '50%',
+		backgroundColor: '#a3be8c',
+		width: '70%',
 		textAlign: 'center',
-		padding: 8,
+		alignItems: 'center',
+		justifyContent: 'center',
+		padding: 10,
 		marginTop: 5,
+	},
+	ConfirmText: {
+		fontSize: 20,
+		fontWeight: "500",
 	},
 	LinksContainer: {
 		marginTop: 20,

@@ -1,9 +1,8 @@
 import { Image, View, Text, TouchableOpacity } from "react-native";
 import styles from "./style";
-import { useState } from "react";
+import { Link } from "@react-navigation/native";
 
-const MovieCard = ({apiURL, movie}) => {
-	let [ readMore, setReadMore ] = useState(false);
+const MovieCard = ({ apiURL, movie }) => {
 	let tooMuchText = movie.attributes.sinopse.length >= 250;
 
 	return (
@@ -26,27 +25,19 @@ const MovieCard = ({apiURL, movie}) => {
 				</View>
 
 				{
-					// Controls read more functionality;
-					(tooMuchText) ?
-						(!readMore) ?
-							// tooMuchText AND NOT readMore;
-							<>
-								<Text style={styles.Description}>{movie.attributes.sinopse.slice(0, 250)}...</Text>
-								<TouchableOpacity onPress={() => setReadMore(true)}>
-									<Text style={styles.ShowMoreText}>Ler mais...</Text>
-								</TouchableOpacity>
-							</> :
-							// tooMuchText AND readMore;
-							<>
-								<Text style={styles.Description}>{movie.attributes.sinopse}</Text>
-								<TouchableOpacity onPress={() => setReadMore(false)}>
-									<Text style={styles.ShowMoreText}>Ler menos...</Text>
-								</TouchableOpacity>
-							</>
-						:
-						// NOT tooMuchText;
+					tooMuchText ?
+						<Text style={styles.Description}>{movie.attributes.sinopse.substring(0, 250)}...</Text> :
 						<Text style={styles.Description}>{movie.attributes.sinopse}</Text>
 				}
+
+				<Link style={styles.ReadMoreBtn}
+					to={{
+						screen: 'MovieDetailsPage',
+						params: { apiURL: apiURL, movie: movie }
+					}}
+				>
+					<Text style={styles.BuyText}>Ler mais...</Text>
+				</Link>
 
 				<TouchableOpacity style={styles.BuyBtn} onPress={() => {}}>
 					<Text style={styles.BuyText}>Comprar Ingresso</Text>
