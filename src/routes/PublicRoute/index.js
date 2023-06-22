@@ -1,9 +1,7 @@
-import {createNativeStackNavigator} from "@react-navigation/native-stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import LoginPage from "../../pages/LoginPage";
 import CreateAccountPage from "../../pages/CreateAccountPage";
 import ForgotPasswordPage from "../../pages/ForgotPasswordPage";
-import AllMoviesPage from "../../pages/AllMoviesPage";
-import MovieDetailsPage from "../../pages/MovieDetailsPage";
 
 
 const Stack = createNativeStackNavigator();
@@ -27,14 +25,6 @@ const PublicStack = () => {
 			<Stack.Screen
 				name={'ForgotPasswordPage'}
 				component={ForgotPasswordPage}
-			/>
-			<Stack.Screen
-				name={'AllMoviesPage'}
-				component={AllMoviesPage}
-			/>
-			<Stack.Screen
-				name={'MovieDetailsPage'}
-				component={MovieDetailsPage}
 			/>
 		</Stack.Navigator>
 	);

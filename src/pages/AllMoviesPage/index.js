@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { ActivityIndicator, SafeAreaView, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { ActivityIndicator, SafeAreaView, ScrollView, View } from "react-native";
 import styles from "./style"
 import MovieCard from "../../components/MovieCard";
 
@@ -26,9 +26,9 @@ const AllMoviesPage = ({ navigation }) => {
 							{ movies.map(movie => <MovieCard movie={movie} apiURL={apiURL} key={movie.id}/>) }
 						</ScrollView>
 
-						<TouchableOpacity onPress={() => {navigation.pop()}} style={styles.OptionsBtn}>
-							<Text style={styles.OptionsText}>Voltar</Text>
-						</TouchableOpacity>
+						{/*<TouchableOpacity onPress={() => {navigation.pop()}} style={styles.OptionsBtn}>*/}
+						{/*	<Text style={styles.OptionsText}>Voltar</Text>*/}
+						{/*</TouchableOpacity>*/}
 					</View> :
 					<ActivityIndicator size={"large"} color={"#2e3440"}/>
 			}

@@ -47,14 +47,6 @@ const LoginPage = ({ navigation }) => {
 				<Link
 					style={styles.Links}
 					to={{
-						screen:'AllMoviesPage'
-					}}
-				>
-					<Text style={styles.LinkText}>Ver Filmes em Cartaz</Text>
-				</Link>
-				<Link
-					style={styles.Links}
-					to={{
 						screen: 'CreateAccountPage'
 					}}
 				>
