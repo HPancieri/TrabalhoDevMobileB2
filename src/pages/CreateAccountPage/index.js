@@ -1,4 +1,4 @@
-import { View, Text, TextInput, SafeAreaView, TouchableOpacity } from "react-native";
+import { View, Text, TextInput, SafeAreaView, TouchableOpacity, Image } from "react-native";
 import { useState } from "react";
 import styles from "./style";
 import { Link } from "@react-navigation/native";
@@ -10,6 +10,11 @@ const CreateAccountPage = ({ navigation }) => {
 
 	return (
 		<SafeAreaView style={styles.Container}>
+			<Image
+				style={styles.Logo}
+				source={require('../../assets/images/logo.png')}
+			/>
+
 			<Text style={styles.Title}>Criar Conta</Text>
 
 			<View style={styles.InputContainer}>

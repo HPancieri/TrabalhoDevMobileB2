@@ -67,6 +67,10 @@ const styles = StyleSheet.create({
 	Links: {
 		margin: 5,
 	},
+	Logo: {
+		width: 200,
+		height: 200,
+	},
 });
 
 export default styles;
