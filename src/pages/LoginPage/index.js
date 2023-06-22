@@ -1,11 +1,14 @@
-import { View, Text, TextInput, SafeAreaView, TouchableOpacity, Image } from "react-native";
+import { View, Text, TextInput, SafeAreaView, TouchableOpacity, Image, ActivityIndicator } from "react-native";
 import { useState } from "react";
 import styles from "./style";
 import { Link } from "@react-navigation/native";
+import { useAuth } from "../../contexts/AuthContext";
 
 const LoginPage = ({ navigation }) => {
 	let [ email, setEmail ] = useState('');
 	let [ passwd, setPasswd ] = useState('');
+
+	const { signIn, loading } = useAuth();
 
 	return (
 		<SafeAreaView style={styles.Container}>
@@ -38,8 +41,15 @@ const LoginPage = ({ navigation }) => {
 					/>
 				</View>
 
-				<TouchableOpacity style={styles.ConfirmBtn}>
-					<Text style={styles.ConfirmText}>Login</Text>
+				<TouchableOpacity
+					style={styles.ConfirmBtn}
+					onPress={() => signIn()}
+				>
+					{
+						loading ?
+							<ActivityIndicator color={"#2e3440"}/> :
+							<Text style={styles.ConfirmText}>Login</Text>
+					}
 				</TouchableOpacity>
 			</View>
 

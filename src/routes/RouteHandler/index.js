@@ -1,11 +1,10 @@
 import PrivateRoute from "../PrivateRoute";
 import PublicRoute from "../PublicRoute";
-import { useContext } from "react";
-import AuthContext from "../../contexts/AuthContext";
+import { useAuth } from "../../contexts/AuthContext";
 
 
 const RouteHandler = () => {
-	const { authed } = useContext(AuthContext);
+	const { authed } = useAuth();
 
 	return (
 		authed ?
