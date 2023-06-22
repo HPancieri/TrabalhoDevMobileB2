@@ -1,11 +1,13 @@
 import 'react-native-gesture-handler';
 import { NavigationContainer } from "@react-navigation/native";
-import PublicRoute from "./src/routes/PublicRoute";
+import PublicRoute from "./routes/PublicRoute";
 
-export default function App() {
+const App = () => {
 	return (
 		<NavigationContainer>
 			<PublicRoute />
 		</NavigationContainer>
 	);
 }
+
+export default App;
